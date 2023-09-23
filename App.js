@@ -3,6 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from './src/pages/Home'
 import Cadastro from './src/pages/Cadastro'
 import Login from './src/pages/Login'
+import Inicio from './src/pages/Inicio'
 const Stack = createStackNavigator();
 
 export default function App(){
@@ -40,6 +41,15 @@ export default function App(){
                     }
                 }
                 }
+                />
+                
+                <Stack.Screen
+                name='Inicio'
+                component={Inicio}
+                options={{
+                    title: '',
+                    headerShown: false,
+                }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
