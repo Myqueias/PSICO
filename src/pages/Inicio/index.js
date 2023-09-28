@@ -23,15 +23,30 @@ export default function Inicio({navigation}){
                     </View>
                 </TouchableOpacity>
                 {/*Conteúdo */}
-                <View style={styles.transtMental}>
-                    <Text style={{fontSize:22, margin:10, marginTop:20, textAlign:'right'}}>Transtornos Mentais</Text>
-                </View>
-                <View style={styles.pcd}>
-                <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Deficiências</Text>
-                </View>
-                <View style={styles.at}>
-                <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Atividades</Text>
-                </View>
+                <TouchableOpacity
+                onPress={()=> navigation.navigate('TranstornosMentais')}
+                >
+                    <View style={styles.transtMental}>
+                        <Text style={{fontSize:22, margin:10, marginTop:20, textAlign:'right'}}>Transtornos Mentais</Text>
+                    </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                onPress={()=> navigation.navigate('Deficiencia')}
+                >
+                    <View style={styles.pcd}>
+                    <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Deficiências</Text>
+                    </View>
+                </TouchableOpacity>
+
+
+                <TouchableOpacity
+                onPress={()=> navigation.navigate('Atividade')}
+                >
+                    <View style={styles.at}>
+                    <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Atividades</Text>
+                    </View>
+                </TouchableOpacity>
 
             </View> 
             <View style={styles.fotter}></View>
