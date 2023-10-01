@@ -1,4 +1,5 @@
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView,  Text, TouchableOpacity, View } from "react-native";
+import { styles } from './atStyle'
 
 export default function TranstornosMentais({navigation}){
     return(
@@ -29,39 +30,11 @@ export default function TranstornosMentais({navigation}){
                     
                 </View>
             </View>
+            <View style={styles.fotter}>
+                    <Text style={{color:'white', fontSize:23}}>
+                        ETE-MFL
+                    </Text>
+            </View>
         </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-    body:{
-        width:450,
-        backgroundColor: '#2F0459',
-        justifyContent: 'center',
-        alignItems:'center',
-        height: '100%',
-    },
-    module:{
-        borderRadius:10,
-        width:400,
-        height: '100%',
-        backgroundColor: '#7F0CF2',
-        justifyContent: 'center',
-        alignItems:'center',
-        padding:15
-    },
-    text:{
-        color:'black',
-        fontSize:22
-    },
-    TouchableOpacity:{
-        borderRadius:10,
-        width:250,
-        height: 50,
-        backgroundColor: '#fff',
-        justifyContent: 'center',
-        alignItems:'center',
-        padding:5,
-        marginTop:20
-    }
-})

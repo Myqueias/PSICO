@@ -1,6 +1,7 @@
 import React from 'react'
-import { Text, StyleSheet, View,  } from 'react-native'
+import { Text,  View,  } from 'react-native'
 import { ScrollView,  } from 'react-native-gesture-handler'
+import { styles } from './psicoStyle'
 
 export default function Psico(){
     
@@ -20,23 +21,12 @@ export default function Psico(){
                 </Text>
             </View>
         </View>
+        <View style={styles.fotter}>
+            <Text style={{color:'white', fontSize:23}}>
+                ETE-MFL
+            </Text>
+        </View>
     </ScrollView>
 )
 }
 
-const styles = StyleSheet.create({
-    body:{
-        width:450,
-        backgroundColor: '#2F0459',
-        justifyContent: 'center',
-        alignItems:'center',
-        height: '100%',
-    },
-    module:{
-        borderRadius:10,
-        width:400,
-        height: '100%',
-        backgroundColor: '#7F0CF2',
-        padding:15
-    }
-})

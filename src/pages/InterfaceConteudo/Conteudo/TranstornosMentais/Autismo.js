@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 export default function Autismo(){
     
     return(
@@ -6,9 +6,10 @@ export default function Autismo(){
         <View style={styles.body}>
             <View style={styles.module}>
                 <Text style={{fontSize:20, color:'white', marginTop:50}}>
-                    Enim ullamco eu non commodo mollit dolore dolor exercitation consectetur dolore esse exercitation. Ut consequat id labore velit tempor dolor pariatur id sint veniam amet. Aute laboris voluptate elit culpa nostrud. Est irure mollit laboris eu aliqua duis consectetur laborum id irure laborum nulla amet. Duis cupidatat id id velit non deserunt culpa aute tempor.
-                    Enim qui magna amet do velit velit incididunt mollit id. Aliqua adipisicing pariatur commodo tempor culpa amet nulla dolore cupidatat pariatur veniam cupidatat. Quis esse culpa nulla amet duis. Laboris ad eu proident sunt magna elit id incididunt consequat laboris magna elit elit.
-                    Reprehenderit est laborum et aute sit consectetur adipisicing laborum ea labore amet incididunt. Aliqua velit culpa labore quis magna amet. Tempor duis aute cupidatat magna eiusmod est duis ad fugiat. Aute minim sunt nisi minim sunt.
+                O autismo é um distúrbio neurológico que afeta o desenvolvimento social, 
+                de comunicação e comportamental de uma pessoa. Caracteriza-se por diferenças 
+                individuais significativas, mas geralmente envolve dificuldades na interação 
+                social, comunicação não verbal e comportamentos repetitivos.
                 </Text>
             </View>
         </View>

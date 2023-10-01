@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     top:{
-        height:60,
-        width:450,
+        height:73,
+        width:409,
         backgroundColor: '#7F0CF2',
         justifyContent: 'center',
         alignItems:'center'
@@ -12,46 +12,44 @@ export const styles = StyleSheet.create({
     },
 
     body:{
-        height: 800,
-        width:450,
+        height: 744,
+        width:409,
         backgroundColor: '#2F0459',
         justifyContent: 'center',
         alignItems:'center'
-
     },
     portfolio:{
-       width:300,
+        width:349,
         height:140,
         backgroundColor: '#fff',
-        marginTop:40,
         paddingTop:15, 
         paddingLeft:15, 
         borderRadius: 10 
     },
     transtMental:{
-        width:300,
+        width:349,
         height:110,
         backgroundColor: '#fff',
-        marginTop:40,
+        marginTop:36,
         paddingTop:15, 
         paddingLeft:15, 
         borderRadius: 10
     },
     pcd:{
-        width:300,
+        width:349,
         height:110,
         backgroundColor: '#fff',
-        marginTop:40,
+        marginTop:36,
         paddingTop:15, 
         paddingLeft:15, 
         borderRadius: 10
     },
     at:{
         
-        width:300,
+        width:349,
         height:110,
         backgroundColor: '#fff',
-        marginTop:40,
+        marginTop:36,
         paddingTop:15, 
         paddingLeft:15, 
         borderRadius: 10
@@ -59,8 +57,8 @@ export const styles = StyleSheet.create({
 
 
     fotter:{
-        height:60,
-        width:450,
+        height:73,
+        width:409,
         backgroundColor: '#7F0CF2',
         justifyContent: 'center',
         alignItems:'center'

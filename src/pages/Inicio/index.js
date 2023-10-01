@@ -49,7 +49,11 @@ export default function Inicio({navigation}){
                 </TouchableOpacity>
 
             </View> 
-            <View style={styles.fotter}></View>
+            <View style={styles.fotter}>
+                <Text style={{color:'white',fontSize:22}}>
+                    ETE-MFL 2023
+                </Text>
+            </View>
         </ScrollView>
     )
 }

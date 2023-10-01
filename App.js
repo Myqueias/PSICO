@@ -1,5 +1,5 @@
 import React from 'react'
-import Routes from './src/routes/navigationRoutes'
+import Routes from './src/routes/StackRoutes'
 
 export default function App(){
     return(

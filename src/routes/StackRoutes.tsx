@@ -3,12 +3,12 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 //Arquivos de navegação
 import Home from '../indexs/Home'
-import Cadastro from '../indexs/Cadastro/'
-import Login from '../indexs/Login/'
-import Inicio from '../pages/Inicio/'
+import Cadastro from '../indexs/Cadastro'
+import Login from '../indexs/Login'
+import Inicio from '../pages/Inicio'
 //Interface do Conteúdo
 import Psico from '../pages/InterfaceConteudo/psico.js'
-import TranstornosMentais from '../pages/InterfaceConteudo/TranstornosMentais'
+import TranstornosMentais from '../pages/InterfaceConteudo/TranstornosMentais.js'
 import Deficiencia from '../pages/InterfaceConteudo/pcd.js'
 import Atividade from '../pages/InterfaceConteudo/at.js'
 //Conteúdo -- Transtornos Mentais
@@ -24,6 +24,7 @@ import Motora from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Motora.js'
 import Intelectual from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Intelectual.js'
 
 
+//Implementação com outros tipos de navegação
 
 
 
@@ -117,7 +118,7 @@ export default function Routes(){
                 component={Autismo}
                 options={{
                     title: '',
-                    headerShown:false
+                    headerShown:true
                 }}
                 />
                 <Stack.Screen
@@ -125,7 +126,7 @@ export default function Routes(){
                 component={Ansiedade}
                 options={{
                     title: '',
-                    headerShown:false
+                    headerShown:true
                 }}
                 />
                 <Stack.Screen
@@ -133,7 +134,7 @@ export default function Routes(){
                 component={Depressao}
                 options={{
                     title: '',
-                    headerShown:false
+                    headerShown:true
                 }}
                 />
                 <Stack.Screen
@@ -141,7 +142,7 @@ export default function Routes(){
                 component={TDHA}
                 options={{
                     title: '',
-                    headerShown:false
+                    headerShown:true
                 }}
                 />
                 <Stack.Screen
@@ -149,7 +150,7 @@ export default function Routes(){
                 component={Curiosidade}
                 options={{
                     title: '',
-                    headerShown:false
+                    headerShown:true
                 }}
                 />
 
@@ -160,7 +161,7 @@ export default function Routes(){
                     component={Auditiva}
                     options={{
                         title: '',
-                        headerShown:false
+                        headerShown:true
                     }}
                     />
                 <Stack.Screen
@@ -168,7 +169,7 @@ export default function Routes(){
                     component={Visual}
                     options={{
                         title: '',
-                        headerShown:false
+                        headerShown:true
                     }}
                     />
                 <Stack.Screen
@@ -176,7 +177,7 @@ export default function Routes(){
                     component={Motora}
                     options={{
                         title: '',
-                        headerShown:false
+                        headerShown:true
                     }}
                     />
                 <Stack.Screen
@@ -184,7 +185,7 @@ export default function Routes(){
                     component={Intelectual}
                     options={{
                         title: '',
-                        headerShown:false
+                        headerShown:true
                     }}
                     />
             </Stack.Navigator>

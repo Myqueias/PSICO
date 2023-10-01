@@ -1,35 +1,57 @@
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function Ansiedade(){
+export default function Curiosidade(){
     
     return(
         <ScrollView>
         <View style={styles.body}>
             <View style={styles.module}>
-                <Text style={{fontSize:20, color:'white', marginTop:50}}>
-                    Enim ullamco eu non commodo mollit dolore dolor exercitation consectetur dolore esse exercitation. Ut consequat id labore velit tempor dolor pariatur id sint veniam amet. Aute laboris voluptate elit culpa nostrud. Est irure mollit laboris eu aliqua duis consectetur laborum id irure laborum nulla amet. Duis cupidatat id id velit non deserunt culpa aute tempor.
-                    Enim qui magna amet do velit velit incididunt mollit id. Aliqua adipisicing pariatur commodo tempor culpa amet nulla dolore cupidatat pariatur veniam cupidatat. Quis esse culpa nulla amet duis. Laboris ad eu proident sunt magna elit id incididunt consequat laboris magna elit elit.
-                    Reprehenderit est laborum et aute sit consectetur adipisicing laborum ea labore amet incididunt. Aliqua velit culpa labore quis magna amet. Tempor duis aute cupidatat magna eiusmod est duis ad fugiat. Aute minim sunt nisi minim sunt.
+                <Text style={{fontSize:28, color:'white',}}>
+                    Curiosidades
+                </Text>
+                <Text style={{fontSize:18, color:'white',marginTop:20}}>
+                    Deficiência Auditiva: Muitas pessoas surdas ou com deficiência auditiva utilizam videofonias (VRS) para fazer chamadas de vídeo com tradução em língua de sinais, permitindo a comunicação eficaz.
+                    Deficiência Visual: A escrita Braille, um sistema tátil de comunicação, foi inventada por Louis Braille quando tinha apenas 15 anos e é amplamente usada por pessoas cegas em todo o mundo.
+                    Deficiência Motora: Stephen Hawking, um renomado cientista, astrônomo e físico teórico, enfrentou uma deficiência motora grave devido à esclerose lateral amiotrófica (ELA), mas suas contribuições para a ciência foram imensuráveis.
+                    Deficiência Intelectual: O famoso físico e matemático Albert Einstein, que desenvolveu a Teoria da Relatividade, enfrentou desafios acadêmicos na infância devido a possíveis características de uma deficiência intelectual, mas superou esses obstáculos para se tornar uma das mentes mais brilhantes da história.
+
+ 
+
                 </Text>
             </View>
         </View>
+        <View style={styles.fotter}>
+                <Text style={{color:'white', fontSize:23}}>
+                    ETE-MFL
+                </Text>
+        </View>
+
     </ScrollView>
 )
 }
 
 const styles = StyleSheet.create({
     body:{
-        width:450,
+        height: 849,
+        width:409,
         backgroundColor: '#2F0459',
         justifyContent: 'center',
-        alignItems:'center',
-        height: '100%',
+        alignItems:'center'
     },
     module:{
         borderRadius:10,
-        width:400,
-        height: '100%',
+        width:359,
+        height: 709,
         backgroundColor: '#7F0CF2',
+        justifyContent: 'center',
+        alignItems:'center',
         padding:15
-    }
+    },
+    fotter:{
+        height:63,
+        width:409,
+        backgroundColor: '#7F0CF2',
+        justifyContent: 'center',
+        alignItems:'center'
+    },
 })
