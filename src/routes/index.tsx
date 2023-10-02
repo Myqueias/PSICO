@@ -1,3 +1,7 @@
+//Arquivos de navegação
+import Home from '../indexs/Home'
+import Cadastro from '../indexs/Cadastro'
+import Login from '../indexs/Login'
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -22,19 +26,49 @@ import Motora from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Motora.js'
 import Intelectual from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Intelectual.js'
 
 
-//Implementação com outros tipos de navegação
-
-
-
 const Stack = createStackNavigator();
-export default function StackRoutes(){
+
+export default function RoutesLog(){
     return(
         <NavigationContainer>
             <Stack.Navigator>
 
                 {/*Telas Iniciais*/}
 
+                <Stack.Screen 
+                name="Home" 
+                component={Home}
+                options={{
+                    title: '',
+                    headerShown: false,
+                }}
+                />
+                <Stack.Screen 
+                name="Cadastro" 
+                component={Cadastro}
+                options={{
+                    title: 'Cadastre-Se',
+                    headerShown: true,
+                    headerStyle: {
+                        backgroundColor: '#6b2f68'
+                    }
+                }}
+                />
                 <Stack.Screen
+                name="Login"
+                component={Login}
+                options={{
+                    title: 'Login',
+                    headerShown: true,
+                    headerStyle:{
+                        backgroundColor: '#6b2f68'  
+                    }
+                }
+            }
+            />
+                            {/*Telas Iniciais*/}
+
+                            <Stack.Screen
                 name='Inicio'
                 component={Inicio}
                 options={{
@@ -155,7 +189,7 @@ export default function StackRoutes(){
                         headerShown:true
                     }}
                     />
-            </Stack.Navigator>
+             </Stack.Navigator>
         </NavigationContainer>
-    )
+        )
 }
