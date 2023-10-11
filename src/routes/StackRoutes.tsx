@@ -1,63 +1,87 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
 
-//Arquivos de navegação
-import Inicio from '../pages/Inicio'
+//Telas de login
+import Home from '../indexs/Home';
+import Cadastro from '../indexs/Cadastro';
+import Login from '../indexs/Login';
 
 //Interface do Conteúdo
-import Psico from '../pages/InterfaceConteudo/psico.js'
-import TranstornosMentais from '../pages/InterfaceConteudo/TranstornosMentais.js'
-import Deficiencia from '../pages/InterfaceConteudo/pcd.js'
-import Atividade from '../pages/InterfaceConteudo/at.js'
+import Inicio from '../pages/Inicio/'
+import TranstornosMentais from '../pages/InterfaceConteudo/TranstornosMentais/TranstornosMentais.js'
+import Deficiencia from '../pages/InterfaceConteudo/Deficientes/pcd.js'
+import Atividade from '../pages/InterfaceConteudo/Atividade/at.js'
 //Conteúdo -- Transtornos Mentais
-import Autismo from '../pages/InterfaceConteudo/Conteudo/TranstornosMentais/Autismo.js'
-import Depressao from '../pages/InterfaceConteudo/Conteudo/TranstornosMentais/Depressao.js'
-import TDHA from '../pages/InterfaceConteudo/Conteudo/TranstornosMentais/TDHA.js'
-import Ansiedade from '../pages/InterfaceConteudo/Conteudo/TranstornosMentais/Ansiedade.js'
-import Curiosidade from '../pages/InterfaceConteudo/Conteudo/TranstornosMentais/Curiosidade.js'
+import Autismo from '../pages/InterfaceConteudo/content/TranstornosMentais/Autismo.js'
+import Depressao from '../pages/InterfaceConteudo/content/TranstornosMentais/Depressao.js'
+import TDHA from '../pages/InterfaceConteudo/content/TranstornosMentais/TDHA.js'
+import Ansiedade from '../pages/InterfaceConteudo/content/TranstornosMentais/Ansiedade.js'
+import Curiosidade from '../pages/InterfaceConteudo/content/TranstornosMentais/Curiosidade.js'
 //Conteúdo -- Deficiência
-import Auditiva from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Auditiva.js'
-import Visual from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Visual.js'
-import Motora from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Motora.js'
-import Intelectual from '../pages/InterfaceConteudo/Conteudo/Deficiencia/Intelectual.js'
+import Auditiva from '../pages/InterfaceConteudo/content/Deficiencia/Auditiva.js'
+import Visual from '../pages/InterfaceConteudo/content/Deficiencia/Visual.js'
+import Motora from '../pages/InterfaceConteudo/content/Deficiencia/Motora.js'
+import Intelectual from '../pages/InterfaceConteudo/content/Deficiencia/Intelectual.js'
 
-
-//Implementação com outros tipos de navegação
-
+//Arquivos de Configuração
+import DrawerRoutes from './DrawerRoutes';
 
 
 const Stack = createStackNavigator();
+
 export default function StackRoutes(){
     return(
-        <NavigationContainer>
-            <Stack.Navigator>
+        <Stack.Navigator>
+
+            {/*Telas de Login*/}
+            <Stack.Screen 
+            name="Home" 
+            component={Home}
+            options={{
+                title: '',
+                headerShown: false,
+            }}
+            />
+            <Stack.Screen 
+            name="Cadastro" 
+            component={Cadastro}
+            options={{
+                title: 'Cadastre-Se',
+                headerShown: true,
+                headerStyle: {
+                    backgroundColor: '#6b2f68'
+                }
+            }}
+            />
+            <Stack.Screen
+            name="Login"
+            component={Login}
+            options={{
+                title: 'Login',
+                headerShown: true,
+                headerStyle:{
+                    backgroundColor: '#6b2f68'  
+                }
+            }
+        }
+        />
 
                 {/*Telas Iniciais*/}
-
                 <Stack.Screen
                 name='Inicio'
-                component={Inicio}
+                component={DrawerRoutes}
                 options={{
                     title: '',
                     headerShown: false,
                 }}
                 />
-                <Stack.Screen
-                name='Psico'
-                component={Psico}
-                options={{
-                    title: 'Sobre a Psico',
-                    headerShown: true,
-                }}
-                />
 
                 {/*Interface do Conteúdo*/}
-
                 <Stack.Screen
                 name='TranstornosMentais'
                 component={TranstornosMentais}
                 options={{
-                    title: '',
+                    title: 'Transtornos Mentais',
                     headerShown: true,
                 }}
                 />
@@ -65,7 +89,7 @@ export default function StackRoutes(){
                 name='Deficiencia'
                 component={Deficiencia}
                 options={{
-                    title: '',
+                    title: 'Deficiências',
                     headerShown: true,
                 }}
                 />
@@ -73,18 +97,17 @@ export default function StackRoutes(){
                 name='Atividade'
                 component={Atividade}
                 options={{
-                    title: '',
+                    title: 'Atividades',
                     headerShown: true,
                 }}
                 />
 
                 {/*Conteúdo -- Transtornos Mentais*/}
-
                 <Stack.Screen
                 name="Autismo"
                 component={Autismo}
                 options={{
-                    title: '',
+                    title: 'Autismo',
                     headerShown:true
                 }}
                 />
@@ -92,7 +115,7 @@ export default function StackRoutes(){
                 name="Ansiedade"
                 component={Ansiedade}
                 options={{
-                    title: '',
+                    title: 'Ansiedade',
                     headerShown:true
                 }}
                 />
@@ -100,7 +123,7 @@ export default function StackRoutes(){
                 name="Depressao"
                 component={Depressao}
                 options={{
-                    title: '',
+                    title: "Depressao",
                     headerShown:true
                 }}
                 />
@@ -108,7 +131,7 @@ export default function StackRoutes(){
                 name="TDHA"
                 component={TDHA}
                 options={{
-                    title: '',
+                    title: 'Transtorno do déficit de atenção com hiperatividade',
                     headerShown:true
                 }}
                 />
@@ -116,14 +139,13 @@ export default function StackRoutes(){
                 name="Curiosidade"
                 component={Curiosidade}
                 options={{
-                    title: '',
+                    title: 'Curiosidade',
                     headerShown:true
                 }}
                 />
 
             {/*Conteúdo -- Deficiência*/}
-
-                <Stack.Screen
+                 <Stack.Screen
                     name="Auditiva"
                     component={Auditiva}
                     options={{
@@ -155,7 +177,8 @@ export default function StackRoutes(){
                         headerShown:true
                     }}
                     />
-            </Stack.Navigator>
-        </NavigationContainer>
+                 {/*Ajustes -- Preferências*/}
+          
+        </Stack.Navigator>
     )
 }

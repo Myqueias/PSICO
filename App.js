@@ -1,9 +1,11 @@
 import React from 'react'
-import RoutesLog from './src/routes/index'
-import 'react-native-gesture-handler';
+import Routes from './src/routes/Routes'
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-export default function App(){
-    return(
-        <RoutesLog/>
-    )
+export default function App() {
+  return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
+        <Routes/>
+    </GestureHandlerRootView>
+  );
 }

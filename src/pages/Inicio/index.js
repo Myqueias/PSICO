@@ -2,31 +2,22 @@ import React from 'react'
 import { Text, TouchableOpacity, View,  } from 'react-native'
 import { ScrollView,  } from 'react-native-gesture-handler'
 import { styles } from './style.ts'
-function mensagem(){
-    alert(console.log('Está funcionando'))
-}
+
 export default function Inicio({navigation}){
     return(
-        <ScrollView>
+        <ScrollView
+        contentContainerStyle={styles.container}
+        >
             <View style={styles.top}>
                 <Text style={styles.toptext}>Bem-vindo, zezinho.</Text>
             </View>
-            <View style={styles.body}>
-                {/*Sobre a empresa */}
+            <View>
                 
-                <TouchableOpacity
-                onPress={()=> navigation.navigate('Psico')}
-                >
-                    <View style={styles.portfolio}>
-                        <Text style={{fontSize:16}}>Quem nós somos?</Text>
-                        <Text style={{fontSize:26, marginTop:10}}>PSICO</Text>
-                    </View>
-                </TouchableOpacity>
                 {/*Conteúdo */}
                 <TouchableOpacity
                 onPress={()=> navigation.navigate('TranstornosMentais')}
                 >
-                    <View style={styles.transtMental}>
+                    <View style={styles.content}>
                         <Text style={{fontSize:22, margin:10, marginTop:20, textAlign:'right'}}>Transtornos Mentais</Text>
                     </View>
                 </TouchableOpacity>
@@ -34,7 +25,7 @@ export default function Inicio({navigation}){
                 <TouchableOpacity
                 onPress={()=> navigation.navigate('Deficiencia')}
                 >
-                    <View style={styles.pcd}>
+                    <View style={styles.content}>
                     <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Deficiências</Text>
                     </View>
                 </TouchableOpacity>
@@ -43,7 +34,7 @@ export default function Inicio({navigation}){
                 <TouchableOpacity
                 onPress={()=> navigation.navigate('Atividade')}
                 >
-                    <View style={styles.at}>
+                    <View style={styles.content}>
                     <Text style={{fontSize:22, margin:30, marginTop:20, textAlign:'right'}}>Atividades</Text>
                     </View>
                 </TouchableOpacity>
