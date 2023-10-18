@@ -9,12 +9,23 @@ export const styles = StyleSheet.create({
     top:{
     },
     toptext:{
-        fontSize:28
+        fontSize:23,
+        color:'#fff'
+    },
+    barText:{
+        marginTop:9,
+        height:hp(0.1),
+        width:wp(80),
+        backgroundColor:'#fff'
     },
     main:{
         height:hp(73),
         justifyContent:'center',
         alignItems:'center',
+    },
+    mainText:{
+        color:'#fff',
+        padding:19
     },
     container:{
         backgroundColor: '#fff',

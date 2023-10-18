@@ -23,14 +23,36 @@ export const styles = StyleSheet.create({
     },
     TouchableOpacity:{
         borderRadius:10,
-        width:250,
-        height: 50,
+        width:299,
+        height:49,
         backgroundColor: '#fff',
         justifyContent: 'center',
         alignItems:'center',
         padding:5,
         marginTop:10
         ,marginBottom: 10
+    },
+    contentCollapsible:{
+        backgroundColor:'white', 
+        borderRadius:10, 
+        width:299,
+        height:309,
+        justifyContent:'center',
+        alignItems:'center',
+        padding:9
+    },
+    contentText:{
+        fontSize:18, 
+        color:'black'
+    },
+    button:{
+        marginTop:9,
+        height:32,
+        width:199,
+        backgroundColor:'gray',
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:9
     },
     fotter:{
         height:73,

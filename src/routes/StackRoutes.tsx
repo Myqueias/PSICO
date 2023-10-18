@@ -31,7 +31,11 @@ const Stack = createStackNavigator();
 
 export default function StackRoutes(){
     return(
-        <Stack.Navigator>
+        <Stack.Navigator
+        screenOptions={{
+            headerTitle:''
+        }}
+        >
 
             {/*Telas de Login*/}
             <Stack.Screen 

@@ -35,10 +35,19 @@ export default function TranstornosMentais({navigation}){
                     >
                             <Text style={styles.text}>Auditiva</Text>
                     </TouchableOpacity>
-                    <Collapsible collapsed={auditivaCollapsed} style={{backgroundColor:'white', borderRadius:10}}>
+                    <Collapsible collapsed={auditivaCollapsed} style={[styles.contentCollapsible, {height:219}]}>
                         <Text style={{fontSize:20, color:'black'}}>
                         A deficiência auditiva é uma condição em que uma pessoa tem dificuldade em ouvir sons, variando de perda auditiva leve a profunda. 
                         </Text>
+
+                        <TouchableOpacity
+                        onPress={()=>{navigation.navigate('Auditiva')}}>
+                            <View
+                            style={styles.button}
+                            >
+                                <Text>Saiba mais</Text>
+                            </View>
+                        </TouchableOpacity>
                     </Collapsible>
 
 
@@ -48,10 +57,19 @@ export default function TranstornosMentais({navigation}){
                     >
                             <Text style={styles.text}>Visual</Text>
                     </TouchableOpacity>
-                    <Collapsible collapsed={visualCollapsed} style={{backgroundColor:'white', borderRadius:10}}>
+                    <Collapsible collapsed={visualCollapsed} style={[styles.contentCollapsible, {height:219}]}>
                         <Text style={{fontSize:20, color:'black'}}>
                         A deficiência visual é uma condição em que uma pessoa tem limitações na capacidade de ver, variando de baixa visão à cegueira completa. 
                         </Text>
+
+                        <TouchableOpacity
+                        onPress={()=>{navigation.navigate('Visual')}}>
+                            <View
+                            style={styles.button}
+                            >
+                                <Text>Saiba mais</Text>
+                            </View>
+                        </TouchableOpacity>
                     </Collapsible>
 
 
@@ -61,10 +79,19 @@ export default function TranstornosMentais({navigation}){
                     >
                             <Text style={styles.text}>Motora</Text>
                     </TouchableOpacity>
-                    <Collapsible collapsed={motoraCollapsed} style={{backgroundColor:'white', borderRadius:10}}>
+                    <Collapsible collapsed={motoraCollapsed} style={[styles.contentCollapsible, {height:209}]}>
                         <Text style={{fontSize:20, color:'black'}}>
                         A deficiência motora é uma condição em que uma pessoa enfrenta limitações na coordenação motora e na habilidade de mover partes do corpo devido a problemas neuromusculares, lesões ou condições médicas. 
                         </Text>
+
+                        <TouchableOpacity
+                        onPress={()=>{navigation.navigate('Motora')}}>
+                            <View
+                            style={styles.button}
+                            >
+                                <Text>Saiba mais</Text>
+                            </View>
+                        </TouchableOpacity>
                     </Collapsible>
 
 
@@ -74,7 +101,7 @@ export default function TranstornosMentais({navigation}){
                     >
                             <Text style={styles.text}>Intelectual</Text>
                     </TouchableOpacity>
-                    <Collapsible collapsed={intelectualCollapsed} style={{backgroundColor:'white', borderRadius:10}}>
+                    <Collapsible collapsed={intelectualCollapsed} style={[styles.contentCollapsible, {height:219}]}>
                         <Text style={{fontSize:20, color:'black'}}>
                         A deficiência intelectual é uma condição em que uma pessoa apresenta limitações significativas na capacidade de aprender e compreender informações, bem como na adaptação às demandas diárias. 
                         </Text>
