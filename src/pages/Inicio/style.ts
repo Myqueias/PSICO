@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         height:hp(15),
         width:wp(80),
-        marginTop:19
+        marginTop:19,
 
     },
     fotter:{

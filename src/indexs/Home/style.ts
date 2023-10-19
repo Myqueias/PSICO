@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+
+
 export const styles = StyleSheet.create({
     tela:{
-        backgroundColor:'purple',
-        height: '100%',
-        width: '100%'
+        height: hp(103),
     },
     titulo:{
         marginTop:10,
@@ -12,18 +13,19 @@ export const styles = StyleSheet.create({
         fontSize: 30
     },
     img: {
-        height:'100%',
-        width:'100%'
+        height:hp(100),
+        width:wp(100)
     },
     botao: {
-        marginTop: 30,
-        marginLeft: 80,
+        marginTop: 29,
         border: 30,
-        width: 250,
-        height: 40,
-        backgroundColor: '#6b2f68',
+        width: wp(63),
+        height: hp(6),
+        backgroundColor: '#fff',
         justifyContent: "center",
-        paddingLeft: 70,
-        borderRadius: 20
+        alignItems:'center',
+        borderRadius: 20,
+        opacity:0.5,
+
     }
     });

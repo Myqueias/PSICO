@@ -1,27 +1,24 @@
 import { StyleSheet } from "react-native";
+import { heightPercentageToDP as hp , widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 export const styles = StyleSheet.create({
     body:{
-        height: 1044,
-        width:409,
-        backgroundColor: '#CBA4FF',
+        height: hp(120),
         justifyContent: 'center',
         alignItems:'center'
     },
     module:{
         borderRadius:10,
         width:359,
-        height: 959,
-        backgroundColor: '#FBA4FF',
+        height: hp(112),
+        backgroundColor: '#fff',
         justifyContent: 'center',
         alignItems:'center',
         padding:15
     },
     fotter:{
-        height:73,
-        width:409,
+        height:hp(8),
         justifyContent: 'center',
-        backgroundColor: '#EBA4FF',
         alignItems:'center'
     },
 })

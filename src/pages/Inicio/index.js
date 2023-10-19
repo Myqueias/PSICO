@@ -1,8 +1,8 @@
-import React from 'react'
-import { Text, TouchableOpacity, View,  } from 'react-native'
-import { ScrollView,  } from 'react-native-gesture-handler'
-import { styles } from './style.ts'
-import {LinearGradient} from 'expo-linear-gradient'
+import React from 'react';
+import { Text, TouchableOpacity, View,  } from 'react-native';
+import { ScrollView,  } from 'react-native-gesture-handler';
+import { styles } from './style.ts';
+import {LinearGradient} from 'expo-linear-gradient';
 
 export default function Inicio({navigation}){
     return(

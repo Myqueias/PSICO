@@ -12,7 +12,7 @@ export default function Transtornos({navigation}){
             Style={styles.body}
             >
 
-                <View style={styles.top}>
+                <View>
                     <Text style={styles.toptext}>O que é um transtorno mental ?</Text>
                     <View style={styles.barText}/>
                 </View>
@@ -32,10 +32,12 @@ export default function Transtornos({navigation}){
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                    onPress={()=> navigation.navigate('Deficiencia')}
+                    onPress={()=> navigation.navigate('TranstornoAprendizagem')}
                     >
                         <View style={styles.container}>
-                        <Text style={{fontSize:18, margin:30, marginTop:20, textAlign:'center'}}>Transtornos de Aprendizagem</Text>
+                        <Text style={{fontSize:18, margin:30, marginTop:20, textAlign:'center'}}>
+                            Transtornos de Aprendizagem
+                        </Text>
                         </View>
                     </TouchableOpacity>
 

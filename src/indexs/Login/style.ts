@@ -1,34 +1,33 @@
 import { StyleSheet } from "react-native";;
+import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-native-responsive-screen";
+
 export const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#800080',
       padding: 20,
-      height: '100%',
-      width: '100%'
+      height: hp(100)
     },
     titleLogin: {
-      color: 'white',
+      color: '#fff',
       fontSize: 50,
       marginLeft:10,
       marginTop:200,
     },
     inputext: {
       marginTop: 30,
-      width: '100%' ,
-      height: 40,
-      backgroundColor: "white",
+      width:wp(89) ,
+      height: hp(5),
+      backgroundColor: "#fff",
       borderRadius: 20,
       paddingLeft:10, 
     },
    botao: {
       marginTop: 30,
       border: 30,
-      width: '100%',
-      height: 40,
-      backgroundColor: '#6b2f68',
+      width:wp(89) ,
+      height: hp(5),
+      backgroundColor: '#fff',
       justifyContent: "center",
-      borderRadius: 20
+      borderRadius: 20,
     },
   });
   

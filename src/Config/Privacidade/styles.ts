@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { heightPercentageToDP as hp , widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 export const styles = StyleSheet.create(
     {
@@ -23,8 +24,8 @@ export const styles = StyleSheet.create(
         },
         division:{
             backgroundColor:'purple',
-            height:3,
-            width:333,
+            height:hp(0.3),
+            width:wp(78),
             marginTop:18
         }
     }

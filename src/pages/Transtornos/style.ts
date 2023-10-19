@@ -6,8 +6,6 @@ export const styles = StyleSheet.create({
         height:hp(100),
         width:wp(100)
     },
-    top:{
-    },
     toptext:{
         fontSize:23,
         color:'#fff'

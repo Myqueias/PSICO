@@ -1,35 +1,40 @@
 import { StyleSheet } from "react-native";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+
 export const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#800080',
-      padding: 20,
-      height: '100%',
-      width: '100%'
+      height: hp(100),
+      width:wp(100)
     },
     titleCadastro: {
-      color: 'white',
+      color: '#fff',
       fontSize: 50,
       marginLeft:10,
       marginTop:200,
     },
+    barText:{
+      marginTop:9,
+      height:hp(0.1),
+      width:wp(80),
+      backgroundColor:'#fff'
+  },
     inputext: {
-      marginTop: 30,
-      width: '100%' ,
-      height: 40,
+      marginTop: 32,
+      width: wp(89) ,
+      height: hp(5),
       backgroundColor: "white",
-      borderRadius: 20,
-      paddingLeft:10, 
+      borderRadius: 23,
+      paddingLeft:12, 
     },
    botao: {
       marginTop: 30,
       border: 30,
-      width: '100%',
-      height: 40,
-      backgroundColor: '#6b2f68',
+      width: wp(89) ,
+      height: hp(5),
+      backgroundColor: '#fff',
       justifyContent: "center",
-      paddingLeft: 140,
-      borderRadius: 20
+      alignItems:'center',
+      borderRadius: 20,
     },
   });
   

@@ -2,6 +2,7 @@ import { ScrollView, Text, View, useWindowDimensions } from "react-native";
 import { styles } from "./styles";
 import ProgressBar from "../ProgressBar";
 import { useState } from "react";
+import { LinearGradient } from "expo-linear-gradient";
 
 
 type ScrollProps ={
@@ -36,7 +37,6 @@ const Privacidade = ()=>{
         <View
         style={styles.container}
         >
-
             <ScrollView
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={styles.content}

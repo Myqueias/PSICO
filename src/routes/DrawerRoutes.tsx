@@ -1,14 +1,13 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { heightPercentageToDP as hp , widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import FontAwesome from 'react-native-vector-icons/FontAwesome5'
 
 
 //CustomDrawer
 import CustomDrawer from '../../assets/CustomDrawer/'
 
 //Implementações de telas
-import Inicio from  '../pages/Inicio/'
 import ConfigScreen from '../Config/ConfigScreen'
 import Conta from '../Config/Conta'
 import Sobre from '../Config/Sobre'
@@ -29,7 +28,7 @@ export default function DrawerRoutes(){
             },
             drawerStyle:{
                 backgroundColor:'#7F0CF2',
-                width:240,
+                width:wp(70),
                 },
             drawerActiveBackgroundColor:'white',
             drawerActiveTintColor:'#000',
@@ -45,7 +44,8 @@ export default function DrawerRoutes(){
             component={TabRoutes}
             options={{
                 headerTitle:'Início',
-                drawerIcon: ({color}) =>(<Ionicons name='home-outline' size={22} color={color}/>)
+                drawerIcon: ({color}) =>(<Ionicons name='home-outline' size={22} color={color}/>),
+                headerPressColor:'#fff'
             }}
             />
             <Drawer.Screen

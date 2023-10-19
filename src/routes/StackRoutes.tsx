@@ -7,10 +7,11 @@ import Cadastro from '../indexs/Cadastro';
 import Login from '../indexs/Login';
 
 //Interface do Conteúdo
-import Inicio from '../pages/Inicio/'
+import TranstornoAprendizagem from '../pages/InterfaceConteudo/TranstornoAprendizagem/'
 import TranstornosMentais from '../pages/InterfaceConteudo/TranstornosMentais/TranstornosMentais.js'
 import Deficiencia from '../pages/InterfaceConteudo/Deficientes/pcd.js'
 import Atividade from '../pages/InterfaceConteudo/Atividade/at.js'
+
 //Conteúdo -- Transtornos Mentais
 import Autismo from '../pages/InterfaceConteudo/content/TranstornosMentais/Autismo.js'
 import Depressao from '../pages/InterfaceConteudo/content/TranstornosMentais/Depressao.js'
@@ -44,30 +45,35 @@ export default function StackRoutes(){
             options={{
                 title: '',
                 headerShown: false,
+                headerStyle:{
+                    height:0
+                }
             }}
+            
             />
             <Stack.Screen 
             name="Cadastro" 
             component={Cadastro}
             options={{
-                title: 'Cadastre-Se',
+                title: '',
                 headerShown: true,
                 headerStyle: {
-                    backgroundColor: '#6b2f68'
-                }
+                    backgroundColor: "#5E17EB"
+                    },
+                headerPressColor:'#fff',
             }}
             />
             <Stack.Screen
             name="Login"
             component={Login}
             options={{
-                title: 'Login',
+                title: '',
                 headerShown: true,
-                headerStyle:{
-                    backgroundColor: '#6b2f68'  
-                }
-            }
-        }
+                headerStyle: {
+                    backgroundColor: "#5E17EB"
+                    },
+                headerPressColor:'#fff',
+            }}
         />
 
                 {/*Telas Iniciais*/}
@@ -75,8 +81,7 @@ export default function StackRoutes(){
                 name='Inicio'
                 component={DrawerRoutes}
                 options={{
-                    title: '',
-                    headerShown: false,
+                    headerShown: false
                 }}
                 />
 
@@ -89,6 +94,17 @@ export default function StackRoutes(){
                     headerShown: true,
                 }}
                 />
+                
+
+                <Stack.Screen
+                name='TranstornoAprendizagem'
+                component={TranstornoAprendizagem}
+                options={{
+                    title: 'Deficiências',
+                    headerShown: true,
+                }}
+                />
+                
                 <Stack.Screen
                 name='Deficiencia'
                 component={Deficiencia}

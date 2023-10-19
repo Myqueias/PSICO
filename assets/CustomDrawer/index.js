@@ -1,14 +1,15 @@
+import React from 'react';
 import { View, Text, Image } from 'react-native'
-import React from 'react'
-import { DrawerItemList } from '@react-navigation/drawer'
+import { DrawerItemList } from '@react-navigation/drawer';
+import { heightPercentageToDP as hp , widthPercentageToDP as wp } from "react-native-responsive-screen";
 
 const CustomDrawer = (props) => {
   return (
     <View style={{flex:1,}}>
-        <View style={{height:129, justifyContent:'center',alignItems:'center'}}>
+        <View style={{height:hp(20), justifyContent:'center',alignItems:'center'}}>
           <Image
               source={require('../Zezinho_Boladao.jpg')}
-              style={{height:80, width:80, borderRadius:40, marginBottom:10}}
+              style={{height:hp(10), width:wp(20), borderRadius:40}}
           />
         </View>
         <Text
